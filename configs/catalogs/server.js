@@ -5,8 +5,7 @@ const app = express();
 const chalk = require("chalk");
 const logger = require("./system-settings/console/console-logger.js");
 const path = require("path");
-const PORT =
-  process.env.PORT || 3219;
+const PORT = process.env.PORT || 5000;
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "/html/website.html"));
 });
