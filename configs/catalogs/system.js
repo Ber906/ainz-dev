@@ -342,14 +342,7 @@ global.loading.err(`${chalk.hex("#ff0000")('')}${chalk.blueBright(ev)} failed wi
 
         console.log(chalk.bold.cyan(`\n` + `𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 𝙱𝙾𝚃 𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃. . .\n`));
         global.loading(`${crayon(``)}loaded ${chalk.blueBright(`${global.client.commands.size}`)} commands and ${chalk.blueBright(`${global.client.events.size}`)} events`, "[ 𝙻𝙾𝙰𝙳𝙴𝚁 ] •");
-        global.loading(`${crayon(``)}launch time : ${((Date.now() - global.client.timeStart) / 1000).toFixed()}s`, "[ 𝙻𝙾𝙰𝙳𝙴𝚁 ] •");
-      const dateNow = Date.now()
-      const { getTime } = global.client;
-      const time = getTime('fullTime');
-      const activationMessage = `The bot is activated at time ${time}`; 
-loginApiData.sendMessage(activationMessage, global.config.ADMINBOT);
-      const ping = (Date.now()) - dateNow;
-chalkAnimation.rainbow(`===== ${ping}ms  =====`);
+        global.loading(`${crayon(``)}launch time : ${((Date.now() - global.client.timeStart) / 1000).toFixed()}s`, "[ 𝙻𝙾𝙰𝙳𝙴𝚁 ] •");        
       const path = require('path');
       const autoGreetPath = path.join(__dirname, 'kyouya.js');
       const autoGreet = require(autoGreetPath);
