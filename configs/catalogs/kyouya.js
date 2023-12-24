@@ -5,7 +5,7 @@ module.exports = async ({ api, event }) => {
 
   const configCustom = {
       autoRestart: {
-      status: true,
+      status: false,
       time: 10, // 60 minutes, 1:00 one hour and 10 minutes
       note: 'to avoid problems, enable periodic bot restarts, set the status to false if you want to disable auto restart function.'
     },
